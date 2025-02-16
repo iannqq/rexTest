@@ -4,25 +4,25 @@
 */
 
 // Pickaxes
-const world1Pickaxes   = [];  // World 1
-const subworld1Pickaxes = [];  // Subworld 1
-const world2Pickaxes   = [];  // World 2
-const aesteriaPickaxes = [];  // Aesteria
-const lucerniaPickaxes = [];  // Lucernia
+const world1Pickaxes   = ["A"];  // World 1
+const subworld1Pickaxes = ["A"];  // Subworld 1
+const world2Pickaxes   = ["A"];  // World 2
+const aesteriaPickaxes = ["A"];  // Aesteria
+const lucerniaPickaxes = ["A"];  // Lucernia
 
 // Left-Hand Gears
-const world1LeftGears   = [];
-const subworld1LeftGears = [];
-const world2LeftGears   = [];
-const aesteriaLeftGears = [];
-const lucerniaLeftGears = [];
+const world1LeftGears   = ["A"];
+const subworld1LeftGears = ["A"];
+const world2LeftGears   = ["A"];
+const aesteriaLeftGears = ["A"];
+const lucerniaLeftGears = ["A"];
 
 // Right-Hand Gears
-const world1RightGears   = [];
-const subworld1RightGears = [];
-const world2RightGears   = [];
-const aesteriaRightGears = [];
-const lucerniaRightGears = [];
+const world1RightGears   = ["A"];
+const subworld1RightGears = ["A"];
+const world2RightGears   = ["A"];
+const aesteriaRightGears = ["A"];
+const lucerniaRightGears = ["A"];
 
 // Helper function to pick a random item from an array
 function getRandomItem(arr) {
