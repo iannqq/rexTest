@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Loadout Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Loadout Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Loadout Generator</h1>
-    
-    <button id="generateButton">Generate Loadout</button>
-    
-    <h2>Your Loadout:</h2>
-    <p><strong>Pickaxe:</strong> <span id="pickaxe">None</span></p>
-    <p><strong>Left-Hand Gear:</strong> <span id="leftGear">None</span></p>
-    <p><strong>Right-Hand Gear:</strong> <span id="rightGear">None</span></p>
-
-    <script src="script.js"></script>
+  <h1>Custom Loadout Generator</h1>
+  
+  <!-- Pickaxe Options -->
+  <div class="checkboxes">
+    <h2>Select Pickaxe Options:</h2>
+    <label>
+      <input type="checkbox" class="pickaxe-world" value="W1" />
+      World 1 Pickaxes
+    </label>
+    <label>
+      <input type="checkbox" class="pickaxe-world" value="W2" />
+      World 2 Pickaxes
+    </label>
+  </div>
+  
+  <!-- Left-Hand Gear Options -->
+  <div class="checkboxes">
+    <h2>Select Left-Hand Gear Options:</h2>
+    <label>
+      <input type="checkbox" class="leftgear-world" value="W1" />
+      World 1 Left-Hand Gears
+    </label>
+    <label>
+      <input type="checkbox" class="leftgear-world" value="W2" />
+      World 2 Left-Hand Gears
+    </label>
+  </div>
+  
+  <!-- Right-Hand Gear Options -->
+  <div class="checkboxes">
+    <h2>Select Right-Hand Gear Options:</h2>
+    <label>
+      <input type="checkbox" class="rightgear-world" value="W1" />
+      World 1 Right-Hand Gears
+    </label>
+    <label>
+      <input type="checkbox" class="rightgear-world" value="W2" />
+      World 2 Right-Hand Gears
+    </label>
+  </div>
+  
+  <button id="generateButton">Generate Loadout</button>
+  
+  <h2>Your Loadout:</h2>
+  <p><strong>Pickaxe:</strong> <span id="pickaxe">None</span></p>
+  <p><strong>Left-Hand Gear:</strong> <span id="leftGear">None</span></p>
+  <p><strong>Right-Hand Gear:</strong> <span id="rightGear">None</span></p>
+  
+  <script src="script.js"></script>
 </body>
 </html>
