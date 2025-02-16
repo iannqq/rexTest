@@ -2,26 +2,20 @@
 
 // Pickaxes
 const W1Pickaxes = [
-  "Default", "Poly Pickaxe", "Miner's Mallet", "Steel Sickle",
-  "Stone Ravager", "Big Slammer", "Darkstone", "Crystalized Pickaxe",
-  "Trinity Claymore", "57 Leaf Clover"
-];
-const W2Pickaxes = ["W2 Pickaxe A", "W2 Pickaxe B", "W2 Pickaxe C"];
+  "Default", "Poly Pickaxe", "Miner's Mallet", "Steel Sickle", "Stone Ravager", "Big Slammer", "Darkstone", "Crystalized Pickaxe", "Trinity Claymore", "57 Leaf Clover"];
+
+const SW1Pickaxes = ["W2 Pickaxe A", "W2 Pickaxe B", "W2 Pickaxe C"];
 
 // Left-Hand Gears
 const W1LeftGears = [
-  "Core Frag", "Blazuine Molotov", "Accretium Fireball", "Temporum Timebomb",
-  "Neptunium Nuke", "Combustal Clusterbomb", "Erodimium Bomb",
-  "Suncindium Flashbang", "Luminatite Lantern", "Polarium Tunneller", "The Inktorb"
+  "Core Frag", "Blazuine Molotov", "Accretium Fireball", "Temporum Timebomb", "Neptunium Nuke", "Combustal Clusterbomb", "Erodimium Bomb", "Suncindium Flashbang", "Luminatite Lantern", "Polarium Tunneller", "The Inktorb"
 ];
-const W2LeftGears = ["W2 Left Gear A", "W2 Left Gear B"];
+const SW1LeftGears = ["W2 Left Gear A", "W2 Left Gear B"];
 
 // Right-Hand Gears
 const W1RightGears = [
-  "Flashlight", "Jump Coil", "Speed Coil", "Thundarian Coil",
-  "Acceleratium Coil", "Candilium Candle", "Elementonic"
-];
-const W2RightGears = ["W2 Right Gear A", "W2 Right Gear B"];
+  "Flashlight", "Jump Coil", "Speed Coil", "Thundarian Coil", "Acceleratium Coil", "Candilium Candle", "Elementonic"];
+const SW1RightGears = ["W2 Right Gear A", "W2 Right Gear B"];
 
 // Helper function to pick a random item from an array
 function getRandomItem(arr) {
@@ -40,8 +34,8 @@ function generateLoadout() {
     if (checkbox.value === "W1") {
       pickaxeOptions.push(...W1Pickaxes);
     }
-    if (checkbox.value === "W2") {
-      pickaxeOptions.push(...W2Pickaxes);
+    if (checkbox.value === "SW1") {
+      pickaxeOptions.push(...SW1Pickaxes);
     }
   });
   
@@ -51,8 +45,8 @@ function generateLoadout() {
     if (checkbox.value === "W1") {
       leftGearOptions.push(...W1LeftGears);
     }
-    if (checkbox.value === "W2") {
-      leftGearOptions.push(...W2LeftGears);
+    if (checkbox.value === "SW1") {
+      leftGearOptions.push(...SW1LeftGears);
     }
   });
   
@@ -62,8 +56,8 @@ function generateLoadout() {
     if (checkbox.value === "W1") {
       rightGearOptions.push(...W1RightGears);
     }
-    if (checkbox.value === "W2") {
-      rightGearOptions.push(...W2RightGears);
+    if (checkbox.value === "SW1") {
+      rightGearOptions.push(...SW1RightGears);
     }
   });
   
