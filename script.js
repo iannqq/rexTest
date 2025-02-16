@@ -4,25 +4,25 @@
 */
 
 // Pickaxes
-const world1Pickaxes   = ["A"];  // World 1
-const subworld1Pickaxes = ["A"];  // Subworld 1
-const world2Pickaxes   = ["A"];  // World 2
-const aesteriaPickaxes = ["A"];  // Aesteria
-const lucerniaPickaxes = ["A"];  // Lucernia
+const world1Pickaxes   = ["Default", "Poly Pickaxe", "Miner's Mallet", "Steel Sickle", "Stone Ravager", "Big Slammer", "Darkstone", "Crystalized Pickaxe", "Trinity Claymore", "57 Leaf Clover"];  // World 1
+const subworld1Pickaxes = ["Lunar Trinity Claymore", "Nostalgic Axe", "NilAxe"];  // Subworld 1
+const world2Pickaxes   = ["Permafrost Pick", "Poison Pick", "Electraver", "Dimensional Scythe", "Celestial Smasher", "Moon Scepter", "Soul Scythe", "Prism of Chaos"];  // World 2
+const aesteriaPickaxes = ["Christmas Crusher"];  // Aesteria
+const lucerniaPickaxes = ["Shimmering Starsearcher"];  // Lucernia
 
 // Left-Hand Gears
-const world1LeftGears   = ["A"];
-const subworld1LeftGears = ["A"];
-const world2LeftGears   = ["A"];
-const aesteriaLeftGears = ["A"];
-const lucerniaLeftGears = ["A"];
+const world1LeftGears   = ["Core Frag", "Blazuine Molotov", "Accretium Fireball", "Temporum Timebomb", "Neptunium Nuke", "Combustal Clusterbomb", "Erodimium Bomb", "Suncindium Flashbang", "Luminatite Lantern", "Polarium Tunneller", "The Inktorb"];
+const subworld1LeftGears = ["Lutetium Superball", "Electrolyx Stun Grenade", "Vaporwave Vaporizer", "Soundstrocity Subwoofer", "RGB C4"];
+const world2LeftGears   = ["Matterbomb", "Shattering Heart", "Spiral Striker", "T1 Terraformer", "Coronal Carpetbomb", "Cube Collector", "Obliveracy Oblitorator", "Subspace Tripmine"];
+const aesteriaLeftGears = ["Sugarcoated Candycrusher", "Coal Smokebomb", "Witch's Brew", "Love Letter", "Phantasm Lantern", "Heartbreaker", "Freeze Frag", "Paradise Parasol"];
+const lucerniaLeftGears = [""];
 
 // Right-Hand Gears
-const world1RightGears   = ["A"];
-const subworld1RightGears = ["A"];
-const world2RightGears   = ["A"];
-const aesteriaRightGears = ["A"];
-const lucerniaRightGears = ["A"];
+const world1RightGears   = ["Flashlight", "Jump Coil", "Speed Coil", "Thundarian Coil", "Acceleratium Coil", "Candilium Candle", "Elementonic"];
+const subworld1RightGears = ["Ambrosia Salad", "Illuminyx Illuminator"];
+const world2RightGears   = ["Vitriol Vigor"];
+const aesteriaRightGears = ["Frost Coil", "Winged Coil", "Lustrous Ribbon"];
+const lucerniaRightGears = [""];
 
 // Helper function to pick a random item from an array
 function getRandomItem(arr) {
