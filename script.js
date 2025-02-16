@@ -1,8 +1,3 @@
-/* 
-  Empty arrays for each world.
-  You can add your items to these arrays later.
-*/
-
 // Pickaxes
 const world1Pickaxes   = ["Default", "Poly Pickaxe", "Miner's Mallet", "Steel Sickle", "Stone Ravager", "Big Slammer", "Darkstone", "Crystalized Pickaxe", "Trinity Claymore", "57 Leaf Clover"];  // World 1
 const subworld1Pickaxes = ["Lunar Trinity Claymore", "Nostalgic Axe", "NilAxe"];  // Subworld 1
@@ -121,5 +116,18 @@ function generateLoadout() {
   document.getElementById("rightGear").textContent = selectedRightGear;
 }
 
-// Set up the event listener for the button
+// Event listener for Generate Loadout button
 document.getElementById("generateButton").addEventListener("click", generateLoadout);
+
+// Check All and Uncheck All functionality
+document.getElementById("checkAllButton").addEventListener("click", () => {
+  document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+    checkbox.checked = true;
+  });
+});
+
+document.getElementById("uncheckAllButton").addEventListener("click", () => {
+  document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+    checkbox.checked = false;
+  });
+});
