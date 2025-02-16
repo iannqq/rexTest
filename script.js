@@ -1,21 +1,28 @@
-// Lists for each world and category
+/* 
+  Empty arrays for each world.
+  You can add your items to these arrays later.
+*/
 
 // Pickaxes
-const W1Pickaxes = [
-  "Default", "Poly Pickaxe", "Miner's Mallet", "Steel Sickle", "Stone Ravager", "Big Slammer", "Darkstone", "Crystalized Pickaxe", "Trinity Claymore", "57 Leaf Clover"];
-
-const SW1Pickaxes = ["W2 Pickaxe A", "W2 Pickaxe B", "W2 Pickaxe C"];
+const world1Pickaxes   = [];  // World 1
+const subworld1Pickaxes = [];  // Subworld 1
+const world2Pickaxes   = [];  // World 2
+const aesteriaPickaxes = [];  // Aesteria
+const lucerniaPickaxes = [];  // Lucernia
 
 // Left-Hand Gears
-const W1LeftGears = [
-  "Core Frag", "Blazuine Molotov", "Accretium Fireball", "Temporum Timebomb", "Neptunium Nuke", "Combustal Clusterbomb", "Erodimium Bomb", "Suncindium Flashbang", "Luminatite Lantern", "Polarium Tunneller", "The Inktorb"
-];
-const SW1LeftGears = ["W2 Left Gear A", "W2 Left Gear B"];
+const world1LeftGears   = [];
+const subworld1LeftGears = [];
+const world2LeftGears   = [];
+const aesteriaLeftGears = [];
+const lucerniaLeftGears = [];
 
 // Right-Hand Gears
-const W1RightGears = [
-  "Flashlight", "Jump Coil", "Speed Coil", "Thundarian Coil", "Acceleratium Coil", "Candilium Candle", "Elementonic"];
-const SW1RightGears = ["W2 Right Gear A", "W2 Right Gear B"];
+const world1RightGears   = [];
+const subworld1RightGears = [];
+const world2RightGears   = [];
+const aesteriaRightGears = [];
+const lucerniaRightGears = [];
 
 // Helper function to pick a random item from an array
 function getRandomItem(arr) {
@@ -30,34 +37,70 @@ function generateLoadout() {
   
   // Combine Pickaxe options based on checkboxes
   document.querySelectorAll('.pickaxe-world:checked').forEach(checkbox => {
-    console.log("Pickaxe checkbox value:", checkbox.value);
-    if (checkbox.value === "W1") {
-      pickaxeOptions.push(...W1Pickaxes);
-    }
-    if (checkbox.value === "SW1") {
-      pickaxeOptions.push(...SW1Pickaxes);
+    switch (checkbox.value) {
+      case "World 1":
+        pickaxeOptions.push(...world1Pickaxes);
+        break;
+      case "Subworld 1":
+        pickaxeOptions.push(...subworld1Pickaxes);
+        break;
+      case "World 2":
+        pickaxeOptions.push(...world2Pickaxes);
+        break;
+      case "Aesteria":
+        pickaxeOptions.push(...aesteriaPickaxes);
+        break;
+      case "Lucernia":
+        pickaxeOptions.push(...lucerniaPickaxes);
+        break;
+      default:
+        break;
     }
   });
   
   // Combine Left-Hand Gear options
   document.querySelectorAll('.leftgear-world:checked').forEach(checkbox => {
-    console.log("Left-Hand Gear checkbox value:", checkbox.value);
-    if (checkbox.value === "W1") {
-      leftGearOptions.push(...W1LeftGears);
-    }
-    if (checkbox.value === "SW1") {
-      leftGearOptions.push(...SW1LeftGears);
+    switch (checkbox.value) {
+      case "World 1":
+        leftGearOptions.push(...world1LeftGears);
+        break;
+      case "Subworld 1":
+        leftGearOptions.push(...subworld1LeftGears);
+        break;
+      case "World 2":
+        leftGearOptions.push(...world2LeftGears);
+        break;
+      case "Aesteria":
+        leftGearOptions.push(...aesteriaLeftGears);
+        break;
+      case "Lucernia":
+        leftGearOptions.push(...lucerniaLeftGears);
+        break;
+      default:
+        break;
     }
   });
   
   // Combine Right-Hand Gear options
   document.querySelectorAll('.rightgear-world:checked').forEach(checkbox => {
-    console.log("Right-Hand Gear checkbox value:", checkbox.value);
-    if (checkbox.value === "W1") {
-      rightGearOptions.push(...W1RightGears);
-    }
-    if (checkbox.value === "SW1") {
-      rightGearOptions.push(...SW1RightGears);
+    switch (checkbox.value) {
+      case "World 1":
+        rightGearOptions.push(...world1RightGears);
+        break;
+      case "Subworld 1":
+        rightGearOptions.push(...subworld1RightGears);
+        break;
+      case "World 2":
+        rightGearOptions.push(...world2RightGears);
+        break;
+      case "Aesteria":
+        rightGearOptions.push(...aesteriaRightGears);
+        break;
+      case "Lucernia":
+        rightGearOptions.push(...lucerniaRightGears);
+        break;
+      default:
+        break;
     }
   });
   
