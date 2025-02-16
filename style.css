@@ -46,7 +46,7 @@ input[type="checkbox"] {
 
 /* Button Styles */
 button {
-  background-color: #ff5722;
+  background-color: #074a9e;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -58,7 +58,7 @@ button {
 }
 
 button:hover {
-  background-color: #074a9e;
+  background-color: #032e65;
 }
 
 /* Paragraph Styles */
