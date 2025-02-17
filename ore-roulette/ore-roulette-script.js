@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Subworld1": ["Lunar Andromidium (Interstellar Cave)", "R136a1 (Interstellar Cave)", "Lunar Lawrencium (Radioactive Cave)", "Ascended Flare (Magmatic Cave)", "Lunar Gargantium (Magmatic Cave)", "Lunar HR 5171 A (Interstellar Cave)", "Oganesson (Radioactive)", "Acessinite (nil Cave)", "Lunar Coronal Flare (Magmatic Cave)", "Genuinium (nil Cave)", "Fire Crystal (nil Cave)", "Pandorite (nil Cave)", "HD 160529 (Interstellar Cave)", "Laniakea Supercluster (Interstellar Cave)", "NILNAL (nil Cave)"],
     "World2": ["Lavortia (Luminous Cave)", "Hyperheated Quasar (Gilded Cave)", "Cygnus (Galactic Cave)", "Exdeus (Unstable Cave)", "Observatorium (Enchanted Cave)"],
     "Aesteria": ["Amalton (Soulseek Cave)", "Cursed Flesh (Fractured Cave", "Bathophobia (Fractured Cave)", "Vigilance (Fractured Cave)"],
-    "Lucernia": ["Cave-Exclusive Ore 1 (Lucernia)", "Cave-Exclusive Ore 2 (Lucernia)"],
+    "Lucernia": [],
   };
 
   // Helper function to pick a random item from an array
