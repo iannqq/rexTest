@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ore Roulette</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="../styles.css"> <!-- Shared CSS -->
+  <link rel="stylesheet" href="ore-roulette-style.css"> <!-- Specific CSS -->
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+    <a href="../index.html" class="back-button">← Back to Welcome Menu</a>
+
+    <h1>Ore Roulette</h1>
+    
+    <!-- Toggle Buttons for Check/Uncheck All -->
+    <div class="toggle-buttons">
+      <button id="checkAllButton">Check All</button>
+      <button id="uncheckAllButton">Uncheck All</button>
+    </div>
+    
+    <!-- Ore Tier Options -->
+    <div class="checkboxes">
+      <h2>Select Ore Tiers:</h2>
+      <label><input type="checkbox" class="ore-tier" value="Transcendent"> Transcendent</label>
+      <label><input type="checkbox" class="ore-tier" value="Enigmatic"> Enigmatic</label>
+      <label><input type="checkbox" class="ore-tier" value="Unfathomable"> Unfathomable</label>
+      <label><input type="checkbox" class="ore-tier" value="Otherworldly"> Otherworldly</label>
+      <label><input type="checkbox" class="ore-tier" value="Zenith"> Zenith</label>
+    </div>
+    
+    <!-- Roll Button -->
+    <button id="rollOreButton">Roll Ore</button>
+    
+    <!-- Result -->
+    <h2>Result:</h2>
+    <p><strong>Selected Ore:</strong> <span id="selectedOre">None</span></p>
+  </div>
+
+  <script src="ore-roulette-script.js"></script>
+</body>
+</html>
