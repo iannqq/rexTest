@@ -27,23 +27,31 @@ document.addEventListener("DOMContentLoaded", function () {
     "Otherworldly-Subworld1": ["Epinephrine"],
     "Otherworldly-World2": ["Retina"],
     "Otherworldly-Aesteria": ["Overseer"],
-    "Otherworldly-Lucernia": [""],
 
     // Zenith
     "Zenith-World1": ["Zanarchium"],
-    "Zenith-Subworld1": [""],
-    "Zenith-World2": [""],
-    "Zenith-Aesteria": [""],
-    "Zenith-Lucernia": [""],
   };
 
-  // Define cave-exclusive ores for each world
+
+  // Define cave-exclusive ores for each tier and world
   const caveExclusiveOres = {
-    "World1": ["Ophanim (Gilded Cave)", "Altovite (Frozen Cave)", "Hallowed Prism (Elemental Cave)", "π (Prismatic Cave)", "Void Reaver (Void Cave)", "Cerlustrium (Frozen Cave)", "Empress of Light (Geode Cave)", "Machina (Divine Cave)"],
-    "Subworld1": ["Lunar Andromidium (Interstellar Cave)", "R136a1 (Interstellar Cave)", "Lunar Lawrencium (Radioactive Cave)", "Ascended Flare (Magmatic Cave)", "Lunar Gargantium (Magmatic Cave)", "Lunar HR 5171 A (Interstellar Cave)", "Oganesson (Radioactive)", "Acessinite (nil Cave)", "Lunar Coronal Flare (Magmatic Cave)", "Genuinium (nil Cave)", "Fire Crystal (nil Cave)", "Pandorite (nil Cave)", "HD 160529 (Interstellar Cave)", "Laniakea Supercluster (Interstellar Cave)", "NILNAL (nil Cave)"],
-    "World2": ["Lavortia (Luminous Cave)", "Hyperheated Quasar (Gilded Cave)", "Cygnus (Galactic Cave)", "Exdeus (Unstable Cave)", "Observatorium (Enchanted Cave)"],
-    "Aesteria": ["Amalton (Soulseek Cave)", "Cursed Flesh (Fractured Cave", "Bathophobia (Fractured Cave)", "Vigilance (Fractured Cave)"],
-    "Lucernia": [],
+    "Transcendent-World1-Cave": ["Ophanim (Gilded Cave)", "Altovite (Frozen Cave)", "Hallowed Prism (Elemental Cave)"],
+    "Transcendent-Subworld1-Cave": ["Lunar Andromidium (Interstellar Cave)", "R136a1 (Interstellar Cave)", "Lunar Lawrencium (Radioactive Cave)", "Ascended Flare (Magmatic Cave)", "Lunar Gargantium (Magmatic Cave)"],
+    "Transcendent-World2-Cave": ["Lavortia (Luminous Cave)"],
+    "Transcendent-Aesteria-Cave": ["Amalton (Soulseek Cave)", "Cursed Flesh (Fractured Cave", "Bathophobia (Fractured Cave)", "Vigilance (Fractured Cave)"],
+
+    "Enigmatic-World1-Cave": ["π (Prismatic Cave)", "Void Reaver (Void Cave)", "Cerlustrium (Frozen Cave)"],
+    "Enigmatic-Subworld1-Cave": ["Lunar HR 5171 A (Interstellar Cave)", "Oganesson (Radioactive)", "Acessinite (nil Cave)", "Lunar Coronal Flare (Magmatic Cave)", "Genuinium (nil Cave)", "Fire Crystal (nil Cave)", "Pandorite (nil Cave)", "HD 160529 (Interstellar Cave)"],
+    "Enigmatic-World2-Cave": ["Hyperheated Quasar (Gilded Cave)", "Cygnus (Galactic Cave)"],
+    "Enigmatic-Aesteria-Cave": ["Heretic's Cage (Soulseek Cave)", "Amorisene (Heartstring Cave)", "Aurora Polaris (Frost Floor Cave)"],
+
+    "Unfathomable-World1-Cave": ["Empress of Light (Geode Cave)"],
+    "Unfathomable-Subworld1-Cave": ["Laniakea Supercluster (Interstellar Cave)"],
+    "Unfathomable-World2-Cave": ["Exdeus (Unstable Cave)"],
+
+    "Otherworldly-World1-Cave": ["Machina (Divine Cave)"],
+    "Otherworldly-Subworld1-Cave": ["NILNAL (nil Cave)"],
+    "Otherworldly-World2-Cave": ["Observatorium (Enchanted Cave)"],
   };
 
   // Helper function to pick a random item from an array
@@ -54,17 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Roll ore based on selected tiers and worlds
   function rollOre() {
     let oreOptions = [];
-    const enableCaveExclusives = document.getElementById("enableCaveExclusives").checked;
 
     // Combine ore options based on checkboxes
     document.querySelectorAll('.ore-tier:checked').forEach(checkbox => {
-      const [tier, world] = checkbox.value.split("-");
       oreOptions.push(...ores[checkbox.value]);
+    });
 
-      // Add cave-exclusive ores if enabled
-      if (enableCaveExclusives) {
-        oreOptions.push(...caveExclusiveOres[world]);
-      }
+    // Add cave-exclusive ores if enabled
+    document.querySelectorAll('.cave-tier:checked').forEach(checkbox => {
+      oreOptions.push(...caveExclusiveOres[checkbox.value]);
     });
 
     // Check if at least one option is selected
