@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Loadout Generator</title>
+  <link rel="stylesheet" href="../styles.css"> <!-- Shared CSS -->
+  <link rel="stylesheet" href="generator-style.css"> <!-- Specific CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>REx: Reincarnated Loadout Generator</h1>
+    
+    <!-- Toggle Buttons for Check/Uncheck All -->
+    <div class="toggle-buttons">
+      <button id="checkAllButton">Check All</button>
+      <button id="uncheckAllButton">Uncheck All</button>
+    </div>
+    
+    <!-- Pickaxe Options -->
+    <div class="checkboxes">
+      <h2>Select Pickaxe Options:</h2>
+      <label><input type="checkbox" class="pickaxe-world" value="World 1"> World 1 Pickaxes</label>
+      <label><input type="checkbox" class="pickaxe-world" value="Subworld 1"> Subworld 1 Pickaxes</label>
+      <label><input type="checkbox" class="pickaxe-world" value="World 2"> World 2 Pickaxes</label>
+      <label><input type="checkbox" class="pickaxe-world" value="Aesteria"> Aesteria Pickaxes</label>
+      <label><input type="checkbox" class="pickaxe-world" value="Lucernia"> Lucernia Pickaxes</label>
+    </div>
+    
+    <!-- Left-Hand Gear Options -->
+    <div class="checkboxes">
+      <h2>Select Left-Hand Gear Options:</h2>
+      <label><input type="checkbox" class="leftgear-world" value="World 1"> World 1 Left-Hand Gears</label>
+      <label><input type="checkbox" class="leftgear-world" value="Subworld 1"> Subworld 1 Left-Hand Gears</label>
+      <label><input type="checkbox" class="leftgear-world" value="World 2"> World 2 Left-Hand Gears</label>
+      <label><input type="checkbox" class="leftgear-world" value="Aesteria"> Aesteria Left-Hand Gears</label>
+      <label><input type="checkbox" class="leftgear-world" value="Lucernia"> Lucernia Left-Hand Gears</label>
+    </div>
+    
+    <!-- Right-Hand Gear Options -->
+    <div class="checkboxes">
+      <h2>Select Right-Hand Gear Options:</h2>
+      <label><input type="checkbox" class="rightgear-world" value="World 1"> World 1 Right-Hand Gears</label>
+      <label><input type="checkbox" class="rightgear-world" value="Subworld 1"> Subworld 1 Right-Hand Gears</label>
+      <label><input type="checkbox" class="rightgear-world" value="World 2"> World 2 Right-Hand Gears</label>
+      <label><input type="checkbox" class="rightgear-world" value="Aesteria"> Aesteria Right-Hand Gears</label>
+      <label><input type="checkbox" class="rightgear-world" value="Lucernia"> Lucernia Right-Hand Gears</label>
+    </div>
+    
+    <button id="generateButton">Generate Loadout</button>
+    
+    <h2>Loadout:</h2>
+    <p><strong>Pickaxe:</strong> <span id="pickaxe">None</span></p>
+    <p><strong>Left-Hand Gear:</strong> <span id="leftGear">None</span></p>
+    <p><strong>Right-Hand Gear:</strong> <span id="rightGear">None</span></p>
+  </div>
+
+  <script src="generator-script.js"></script>
+</body>
+</html>
