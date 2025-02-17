@@ -20,6 +20,11 @@ h3 {
   margin: 15px 0 10px 0;
 }
 
+h4 {
+  color: #ffcc00;
+  margin: 10px 0 5px 0;
+}
+
 /* Toggle Buttons */
 .toggle-buttons {
   margin: 20px 0;
@@ -62,11 +67,8 @@ input[type="checkbox"] {
 }
 
 /* Cave-Exclusive Checkboxes */
-.cave-exclusive {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #ffcc00;
+.cave-tier {
+  margin-left: 20px; /* Indent cave-exclusive options */
 }
 
 /* Roll Button */
