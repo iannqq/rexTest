@@ -15,6 +15,11 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  color: #ffffff;
+  margin: 15px 0 10px 0;
+}
+
 /* Toggle Buttons */
 .toggle-buttons {
   margin: 20px 0;
@@ -36,14 +41,15 @@ h1, h2 {
   background-color: #666;
 }
 
-/* Checkboxes Section */
-.checkboxes {
+/* Tier Sections */
+.tier-section {
   background-color: #1e1e1e;
   padding: 15px;
   border-radius: 8px;
   margin: 20px 0;
 }
 
+/* Checkboxes */
 label {
   display: inline-block;
   margin: 0 15px 10px 0;
@@ -53,6 +59,14 @@ label {
 
 input[type="checkbox"] {
   margin-right: 8px;
+}
+
+/* Cave-Exclusive Checkboxes */
+.cave-exclusive {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffcc00;
 }
 
 /* Roll Button */
@@ -92,18 +106,4 @@ p {
 
 .back-button:hover {
   background-color: #666;
-}
-
-/* Cave Toggle */
-.cave-toggle {
-  margin: 20px 0;
-}
-
-.cave-toggle label {
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.cave-toggle input[type="checkbox"] {
-  margin-right: 8px;
 }
