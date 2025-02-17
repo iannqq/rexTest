@@ -93,3 +93,17 @@ p {
 .back-button:hover {
   background-color: #666;
 }
+
+/* Cave Toggle */
+.cave-toggle {
+  margin: 20px 0;
+}
+
+.cave-toggle label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cave-toggle input[type="checkbox"] {
+  margin-right: 8px;
+}
