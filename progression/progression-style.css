@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent double scrollbars */
+  overflow: auto; /* Allow scrolling */
 }
 
 /* Container */
@@ -16,7 +16,7 @@ html, body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-y: visible; /* Allow content to overflow and scroll */
 }
 
 /* Headings */
