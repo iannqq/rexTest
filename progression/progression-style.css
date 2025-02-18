@@ -1,38 +1,76 @@
-/* Ensure full height and scrolling */
+/* Ensure the body and html take up the full height of the viewport and allow scrolling */
 html, body {
-  height: auto;
-  min-height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
-  overflow-y: auto; /* Ensures scrolling is always possible */
-  scroll-behavior: smooth; /* Optional: smooth scrolling */
+  overflow: auto; /* Allow scrolling */
 }
 
-/* Ensure the container does not block scrolling */
+/* Container */
 .container {
   width: 90%;
   max-width: 800px;
   padding: 20px;
-  margin: 0 auto;
+  margin: 0 auto; /* Remove top margin to allow scrolling to the top */
   background-color: #2a2a2a;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative; /* Ensure positioning does not interfere with scrolling */
+  overflow-y: visible; /* Allow content to overflow */
 }
 
-/* Prevent any section from restricting scrolling */
+/* Headings */
+h1, h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #ffffff;
+  margin: 15px 0 10px 0;
+  cursor: pointer; /* Make headings clickable */
+}
+
+/* Sections */
 .section {
-  overflow: visible !important;
+  margin-bottom: 30px;
 }
 
-/* Ensure there is extra scroll space above */
-body::before {
-  content: "";
-  display: block;
-  height: 100px; /* Adds extra scroll space at the top */
+/* Items */
+.item {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
 }
 
-/* Allow infinite scrolling behavior */
-body {
-  overscroll-behavior: none; /* Prevents scroll snapping issues */
+.item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+/* Collapsible Content */
+.content {
+  display: none; /* Hidden by default */
+  margin-top: 10px;
+}
+
+.content.active {
+  display: block; /* Show when active */
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #666;
 }
