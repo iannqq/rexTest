@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Left-Hand Gear Arrays
   const world1LeftGears = ["Core Frag", "Blazuine Molotov", "Accretium Fireball", "Temporum Timebomb", "Neptunium Nuke", "Combustal Clusterbomb", "Erodimium Bomb", "Suncindium Flashbang", "Luminatite Lantern", "Polarium Tunneller", "The Inktorb"];
   const subworld1LeftGears = ["Lutetium Superball", "Electrolyx Stun Grenade", "Vaporwave Vaporizer", "Soundstrocity Subwoofer", "RGB C4"];
-  const world2LeftGears = ["Matterbomb", "Shattering Heart", "Spiral Striker", "T1 Terraformer", "Coronal Carpetbomb", "Cube Collector", "Obliveracy Oblitorator", "Subspace Tripmine"];
+  const world2LeftGears = ["Matterbomb", "Shattering Heart", "Spiral Striker", "T1 Terraformer", "Coronal Carpetbomb", "Cube Collector", "Obliveracy Obliterator", "Subspace Tripmine"];
   const aesteriaLeftGears = ["Sugarcoated Candycrusher", "Coal Smokebomb", "Witch's Brew", "Love Letter", "Phantasm Lantern", "Heartbreaker", "Freeze Frag", "Paradise Parasol"];
   const lucerniaLeftGears = [""];
 
